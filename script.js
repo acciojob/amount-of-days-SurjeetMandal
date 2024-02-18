@@ -6,7 +6,7 @@ function daysOfAYear(year) {
 		return 366;
 	}
 	else if (year%100 === 0) {
-		return 365;
+		return 366;
 	} 
 	else {
 		return 365;
@@ -15,6 +15,7 @@ function daysOfAYear(year) {
 
 const year = prompt("Enter the year");
 alert(daysOfAYear(year));
+
 
 
 

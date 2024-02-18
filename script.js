@@ -1,11 +1,21 @@
 function daysOfAYear(year) {
-	if ((year%4 == 0) && (year%400 == 0) || (year%100 != 0) ) {
+	if (year%4 === 0) {
 		return 366;
 	}
-	else{
+	else if (year%400 === 0) {
+		return 366;
+	}
+	else if (year%100 === 0) {
+		return 365;
+	} 
+	else {
 		return 365;
 	}
 }
 
 const year = prompt("Enter the year");
-alert(dateDiffInDays(year));
+alert(daysOfAYear(year));
+
+
+
+

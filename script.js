@@ -7,5 +7,5 @@ function daysOfAYear(year) {
 	}
 }
 
-const year = prompt("Enter the year Date.");
+const year = prompt("Enter the year");
 alert(dateDiffInDays(year));
